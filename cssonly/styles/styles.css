@@ -4,7 +4,7 @@ html, body {
 }
 
 html.no-touch .my-carousel-control {
-  /*opacity: 0;*/
+  opacity: 0;
 }
 
 html.no-touch .my-carousel-control:hover {
