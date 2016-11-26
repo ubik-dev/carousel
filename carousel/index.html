@@ -1,0 +1,58 @@
+<html ng-app="app">
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-controller="CarouselCtrl">
+
+
+  <div class="hidden-xs">
+    <div uib-carousel active="active" interval="myInterval" template-url="klm-carousel.html">
+      <div uib-slide ng-repeat="slide in slides track by $index" index="$index">
+        <img ng-src="{{slide.img}}" style="margin:auto;">
+        <div class="description hidden-xs">
+          <h5>{{slide.description}}</h5>
+        </div>
+      </div>
+    </div>
+    <div class="search hidden-xs">
+      <h5>Here I book my flights</h5>
+    </div>
+  </div>
+  <uib-accordion class="visible-xs hidden">
+    <div uib-accordion-group class="panel-default" heading="Plan en boek" is-open="status.planIsOpen" >
+      <div uib-carousel active="active" interval="myInterval" template-url="klm-carousel.html">
+        <div uib-slide ng-repeat="slide in slides track by $index" index="$index">
+          <img ng-src="{{slide.img}}" style="margin:auto;">
+          <div class="description hidden-xs">
+            <h5>{{slide.description}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div uib-accordion-group class="panel-default" heading="Mijn Reis" is-open="status.tripIsOpen" >
+
+    </div>
+     <div uib-accordion-group class="panel-default" heading="Inchecken" is-open="status.checkinIsOpen" >
+
+    </div>
+  </uib-accordion>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.2.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
