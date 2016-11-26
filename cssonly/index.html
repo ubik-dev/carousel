@@ -2,72 +2,74 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body>
-  <div class="search">
-    Here is where I choose my plane
-  </div>
-  <div class="carousel">
-    <div class="carousel-inner">
-      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-      <div class="carousel-item">
-          <div class="description">
-            This is a very nice airplane
-          </div>
-          <img src="images/home1.jpg">
+  <div class="my-carousel">
+    <div class="my-carousel-inner">
+      <input class="my-carousel-open" type="radio" id="my-carousel-1" name="my-carousel" aria-hidden="true" hidden="" checked="checked">
+      <div class="my-carousel-item">
+        <div class="description hidden-xs">
+          This is a very nice airplane
+        </div>
+        <img src="images/home1.jpg">
       </div>
-      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item">
-        <div class="description">
-            This is a very nice windmill
-          </div>
+      <input class="my-carousel-open" type="radio" id="my-carousel-2" name="my-carousel" aria-hidden="true" hidden="">
+      <div class="my-carousel-item">
+        <div class="description hidden-xs">
+          This is a very nice windmill
+        </div>
         <img src="images/home2.jpg">
       </div>
-      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item">
-        <div class="description">
-            These are people are happy
-          </div>
+      <input class="my-carousel-open" type="radio" id="my-carousel-3" name="my-carousel" aria-hidden="true" hidden="">
+      <div class="my-carousel-item">
+        <div class="description hidden-xs">
+          These are people are happy
+        </div>
         <img src="images/home3.jpg">
       </div>
-      <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item">
-         <div class="description">
-            I like this tablet
-          </div>
+      <input class="my-carousel-open" type="radio" id="my-carousel-4" name="my-carousel" aria-hidden="true" hidden="">
+      <div class="my-carousel-item">
+        <div class="description hidden-xs">
+          I like this tablet
+        </div>
         <img src="images/home4.jpg">
       </div>
-      <label for="carousel-4" class="carousel-control prev control-1">‹</label>
-      <label for="carousel-2" class="carousel-control next control-1">›</label>
-      <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-      <label for="carousel-3" class="carousel-control next control-2">›</label>
-      <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-      <label for="carousel-4" class="carousel-control next control-3">›</label>
-      <label for="carousel-3" class="carousel-control prev control-4">‹</label>
-      <label for="carousel-1" class="carousel-control next control-4">›</label>
-      
-      <ol class="carousel-indicators">
+      <label for="my-carousel-4" class="my-carousel-control glyphicon glyphicon-chevron-left  prev control-1"></label>
+      <label for="my-carousel-2" class="my-carousel-control glyphicon glyphicon-chevron-right next control-1"></label>
+      <label for="my-carousel-1" class="my-carousel-control glyphicon glyphicon-chevron-left prev control-2"></label>
+      <label for="my-carousel-3" class="my-carousel-control  glyphicon glyphicon-chevron-right next control-2"></label>
+      <label for="my-carousel-2" class="my-carousel-control glyphicon glyphicon-chevron-left prev control-3"></label>
+      <label for="my-carousel-4" class="my-carousel-control  glyphicon glyphicon-chevron-right next control-3"></label>
+      <label for="my-carousel-3" class="my-carousel-control glyphicon glyphicon-chevron-left prev control-4"></label>
+      <label for="my-carousel-1" class="my-carousel-control  glyphicon glyphicon-chevron-right next control-4"></label>
+
+      <ol class="my-carousel-indicators">
         <li>
-          <label for="carousel-1" class="carousel-bullet">•</label>
-          <div  class="carousel-bullet">•</div>
+          <label for="my-carousel-1" class="my-carousel-bullet">•</label>
+          <div class="my-carousel-bullet">•</div>
         </li>
         <li>
-          <label for="carousel-2" class="carousel-bullet">•</label>
-           <div  class="carousel-bullet">•</div>
+          <label for="my-carousel-2" class="my-carousel-bullet">•</label>
+          <div class="my-carousel-bullet">•</div>
         </li>
         <li>
-          <label for="carousel-3" class="carousel-bullet">•</label>
-           <div  class="carousel-bullet">•</div>
+          <label for="my-carousel-3" class="my-carousel-bullet">•</label>
+          <div class="my-carousel-bullet">•</div>
         </li>
         <li>
-          <label for="carousel-4" class="carousel-bullet">•</label>
-           <div  class="carousel-bullet">•</div>
+          <label for="my-carousel-4" class="my-carousel-bullet">•</label>
+          <div class="my-carousel-bullet">•</div>
         </li>
       </ol>
     </div>
   </div>
+  <div class="search hidden-xs">
+    Here is where I choose my plane
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </body>
 
 </html>
