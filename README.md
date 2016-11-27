@@ -10,7 +10,7 @@ Deployed versions:
 
 - with javascript http://truthful-paste.surge.sh/carousel/
 
-- css only http://truthful-paste.surge.sh/carousel/
+- css only http://truthful-paste.surge.sh/cssonly/
 
 #Description
 Create one of the carousels as shown on the attached design.
